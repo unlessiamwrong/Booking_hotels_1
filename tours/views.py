@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.core.handlers.wsgi import WSGIRequest
 from django.http.response import HttpResponse
 
+
 def main_view(request: WSGIRequest) -> HttpResponse:
     return render(request, 'index.html')
 
